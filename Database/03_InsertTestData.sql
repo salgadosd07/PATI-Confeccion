@@ -6,19 +6,6 @@ USE PATI_Confeccion;
 GO
 
 -- ============================================
--- 1. Roles de Usuario
--- ============================================
-PRINT 'Insertando roles...';
-INSERT INTO [dbo].[AspNetRoles] ([Id], [Name], [NormalizedName], [ConcurrencyStamp])
-VALUES 
-    (NEWID(), 'Administrador', 'ADMINISTRADOR', NEWID()),
-    (NEWID(), 'Supervisor', 'SUPERVISOR', NEWID()),
-    (NEWID(), 'Operador', 'OPERADOR', NEWID()),
-    (NEWID(), 'Almacenista', 'ALMACENISTA', NEWID());
-
-GO
-
--- ============================================
 -- 3. Referencias (Tipos de Prenda)
 -- ============================================
 PRINT 'Insertando referencias...';
